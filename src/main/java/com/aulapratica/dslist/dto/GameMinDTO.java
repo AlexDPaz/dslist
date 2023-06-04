@@ -1,4 +1,4 @@
-package com.aulapratica.dslist.dto;
+ 	package com.aulapratica.dslist.dto;
 
 import com.aulapratica.dslist.entities.Game;
 

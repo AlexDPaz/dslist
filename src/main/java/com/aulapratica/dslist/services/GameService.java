@@ -11,14 +11,13 @@ import com.aulapratica.dslist.repositories.GameRepository;
 
 @Service
 public class GameService {
-	
+
 	@Autowired
 	private GameRepository gameRepository;
-	
+
 	public List<GameMinDTO> findALL(){
 		List<Game> result = gameRepository.findAll();
 		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList();
 		return dto;
 	}
-
 }
